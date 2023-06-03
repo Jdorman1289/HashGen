@@ -1,19 +1,71 @@
 <!DOCTYPE html>
-<html lang="eng">
-    
-    <head>
-        <title>HashGen</title>
-        <link rel="stylesheet" href="styles.css" />
-    </head>
-        <body>
-            <div class="textbox">
-                <label for="theText"></label><input type="text" id="theText">
-            </div>
-            <button id="submitB" onclick="generateHashTag()">Submit</button>
-            <label for="outputText"></label>
-            <textarea id="outputText">
+<html lang="en">
+<head>
+    <title>Hashtag Generator</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 10px 25px 0px rgba(0,0,0,0.1);
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        #inputText {
+            width: 80%;
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        #generateButton {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1em;
+            border: none;
+            background-color: #1DA1F2; /* Twitter's blue color */
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        #generateButton:hover {
+            background-color: #0d95e8;
+        }
+        #outputDiv {
+            margin-top: 20px;
+        }
+        #outputDiv a {
+            margin-right: 5px;
+            text-decoration: none;
+            color: #1DA1F2; /* Twitter's blue color */
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Hashtag Generator</h1>
+    <p>Enter a topic or a phrase to generate related hashtags:</p>
+    <label for="inputText"></label><input type="text" id="inputText">
+    <button id="generateButton">Generate Hashtags</button>
+    <p id="outputDiv"></p>
+</div>
 
-            </textarea>
-            <script src="js/script.js"></script>
-        </body>
+<script src="js/script.js"></script>
+</body>
 </html>
+
