@@ -15,6 +15,6 @@ function generateHashTag(str) {
     } else {
         tagList.unshift("#");
         outputText.innerHTML = (tagList.join(""));
-        return (tagList.join(""));
+        return tagList.join("");
     }
 }
