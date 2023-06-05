@@ -9,7 +9,7 @@
             <div class="textbox">
                 <label for="theText"></label><input type="text" id="theText">
             </div>
-            <button id="submitB" onclick="generateHashTag()">Submit</button>
+            <button id="submitB" onclick="generateHashTag(document.getElementById('theText').value)">Submit</button>
             <label for="outputText"></label>
             <textarea id="outputText">
 

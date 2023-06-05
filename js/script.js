@@ -1,8 +1,7 @@
 "use strict";
 
-function generateHashTag() {
+function generateHashTag(str) {
     let outputText = document.getElementById("outputText");
-    let str = document.getElementById("theText").value
     let list = str.split(" ");
     let tagList = [];
     list.forEach(word => {
@@ -16,5 +15,6 @@ function generateHashTag() {
     } else {
         tagList.unshift("#");
         outputText.innerHTML = (tagList.join(""));
+        return (tagList.join(""));
     }
 }
