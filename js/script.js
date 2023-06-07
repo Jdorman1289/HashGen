@@ -14,7 +14,7 @@ function generateHashTag(str) {
         return false;
     } else {
         tagList.unshift("#");
-        outputText.innerHTML = (tagList.join(""));
+        outputText.innerHTML = (tagList.join("")); //Comment this line out for Jasmine test
         return tagList.join("");
     }
 }
