@@ -1,2 +1,2 @@
 # HashGen
-Generate clickable Hash Tags
+Generate Hash Tags
